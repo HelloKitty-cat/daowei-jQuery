@@ -1,3 +1,7 @@
+"use strict";
+
+var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+
 /*!art-template - Template Engine | http://aui.github.com/artTemplate/*/
 !function () {
   function a(a) {
@@ -42,7 +46,7 @@
     } catch (B) {
       throw B.temp = "function anonymous($data,$filename) {" + z + "}", B;
     }
-  }var d = function (a, b) {
+  }var d = function d(a, b) {
     return "string" == typeof b ? q(b, { filename: a }) : g(a, b);
   };d.version = "3.0.0", d.config = function (a, b) {
     e[a] = b;
@@ -52,32 +56,38 @@
   };var g = d.renderFile = function (a, b) {
     var c = d.get(a) || p({ filename: a, name: "Render Error", message: "Template not found" });return b ? c(b) : c;
   };d.get = function (a) {
-    var b;if (f[a]) b = f[a];else if ("object" == typeof document) {
+    var b;if (f[a]) b = f[a];else if ("object" == (typeof document === "undefined" ? "undefined" : _typeof(document))) {
       var c = document.getElementById(a);if (c) {
         var d = (c.value || c.innerHTML).replace(/^\s*|\s*$/g, "");b = q(d, { filename: a });
       }
     }return b;
-  };var h = function (a, b) {
-    return "string" != typeof a && (b = typeof a, "number" === b ? a += "" : a = "function" === b ? h(a.call(a)) : ""), a;
+  };var h = function h(a, b) {
+    return "string" != typeof a && (b = typeof a === "undefined" ? "undefined" : _typeof(a), "number" === b ? a += "" : a = "function" === b ? h(a.call(a)) : ""), a;
   },
       i = { "<": "&#60;", ">": "&#62;", '"': "&#34;", "'": "&#39;", "&": "&#38;" },
-      j = function (a) {
+      j = function j(a) {
     return i[a];
   },
-      k = function (a) {
+      k = function k(a) {
     return h(a).replace(/&(?![\w#]+;)|[<>"']/g, j);
   },
       l = Array.isArray || function (a) {
     return "[object Array]" === {}.toString.call(a);
   },
-      m = function (a, b) {
-    var c, d;if (l(a)) for (c = 0, d = a.length; d > c; c++) b.call(a, a[c], c, a);else for (c in a) b.call(a, a[c], c);
+      m = function m(a, b) {
+    var c, d;if (l(a)) for (c = 0, d = a.length; d > c; c++) {
+      b.call(a, a[c], c, a);
+    } else for (c in a) {
+      b.call(a, a[c], c);
+    }
   },
       n = d.utils = { $helpers: {}, $include: g, $string: h, $escape: k, $each: m };d.helper = function (a, b) {
     o[a] = b;
   };var o = d.helpers = n.$helpers;d.onerror = function (a) {
-    var b = "Template Error\n\n";for (var c in a) b += "<" + c + ">\n" + a[c] + "\n\n";"object" == typeof console && console.error(b);
-  };var p = function (a) {
+    var b = "Template Error\n\n";for (var c in a) {
+      b += "<" + c + ">\n" + a[c] + "\n\n";
+    }"object" == (typeof console === "undefined" ? "undefined" : _typeof(console)) && console.error(b);
+  };var p = function p(a) {
     return d.onerror(a), function () {
       return "{Template Error}";
     };
@@ -89,7 +99,9 @@
       } catch (d) {
         return b.debug ? p(d)() : (b.debug = !0, q(a, b)(c));
       }
-    }b = b || {};for (var g in e) void 0 === b[g] && (b[g] = e[g]);var h = b.filename;try {
+    }b = b || {};for (var g in e) {
+      void 0 === b[g] && (b[g] = e[g]);
+    }var h = b.filename;try {
       var i = c(a, b);
     } catch (j) {
       return j.filename = h || "anonymous", j.name = "Syntax Error", p(j);
@@ -104,7 +116,7 @@
       v = new RegExp(["\\b" + s.replace(/,/g, "\\b|\\b") + "\\b"].join("|"), "g"),
       w = /^\d[^,]*|,\d[^,]*/g,
       x = /^,+|,+$/g,
-      y = /^$|,+/;e.openTag = "{{", e.closeTag = "}}";var z = function (a, b) {
+      y = /^$|,+/;e.openTag = "{{", e.closeTag = "}}";var z = function z(a, b) {
     var c = b.split(":"),
         d = c.shift(),
         e = c.join(":") || "";return e && (e = ", " + e), "$helpers." + d + "(" + a + e + ")";
@@ -124,7 +136,9 @@
         a = "print(" + e + ");";break;case "print":case "include":
         a = c + "(" + b.join(",") + ");";break;default:
         if (/^\s*\|\s*[\w\$]/.test(e)) {
-          var k = !0;0 === a.indexOf("#") && (a = a.substr(1), k = !1);for (var l = 0, m = a.split("|"), n = m.length, o = m[l++]; n > l; l++) o = z(o, m[l]);a = (k ? "=" : "=#") + o;
+          var k = !0;0 === a.indexOf("#") && (a = a.substr(1), k = !1);for (var l = 0, m = a.split("|"), n = m.length, o = m[l++]; n > l; l++) {
+            o = z(o, m[l]);
+          }a = (k ? "=" : "=#") + o;
         } else a = d.helpers[c] ? "=#" + c + "(" + b.join(",") + ");" : "=" + a;}return a;
   }, "function" == typeof define ? define(function () {
     return d;

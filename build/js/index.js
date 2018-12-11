@@ -19,7 +19,7 @@ $(function () {
   });
 
   var $header = $('.headerContent');
-  var Height = $($header).outerHeight();
+  var Height = $('.nav').outerHeight();
   var isFixed = false;
   $(window).scroll(function () {
 
@@ -27,11 +27,10 @@ $(function () {
       if (!isFixed) {
         $header.hide().slideDown('slow').addClass('headerContent header-fixed');
         isFixed = true;
-        return false;
       }
-    } else if (document.documentElement.scrollTop < Height) {
+    } else if (document.documentElement.scrollTop <= Height) {
       if (isFixed) {
-        $header.removeClass('header-fixed').prependTo('#wrap');
+        $header.removeClass('header-fixed');
         isFixed = false;
       }
     }

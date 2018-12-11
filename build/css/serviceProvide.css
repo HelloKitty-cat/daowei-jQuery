@@ -190,6 +190,7 @@ i {
 #wrap {
   width: 100%;
   min-width: 1200px;
+  background: #FBF8F8;
 }
 #wrap .headerContent {
   width: 100%;
@@ -360,277 +361,131 @@ i {
           transform: rotate(45deg);
   z-index: 1;
 }
-#wrap .Banner {
+#wrap .content {
   width: 100%;
-  height: 420px;
-  background: pink;
+}
+#wrap .content .contentWrap {
   position: relative;
-}
-#wrap .Banner .swiper-container {
-  width: 100%;
-  height: 100%;
-}
-#wrap .Banner .swiper-container img {
-  width: 100%;
-  height: 100%;
-  font-size: 0;
-}
-#wrap .Banner .contentUl {
-  width: 180px;
-  height: 420px;
-  background: #757881;
-  position: absolute;
-  left: 19%;
-  top: 0;
-  z-index: 3;
-}
-#wrap .Banner .contentUl .contentLi {
-  width: 100%;
-  height: 42px;
-}
-#wrap .Banner .contentUl .contentLi .contentAnode {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  height: 100%;
-  color: #fff;
-  font-weight: bold;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: relative;
-}
-#wrap .Banner .contentUl .contentLi .contentAnode:hover {
-  color: #fff;
-}
-#wrap .Banner .contentUl .contentLi .contentAnode span {
-  margin-left: 45px;
-}
-#wrap .Banner .contentUl .contentLi .contentAnode .rightIcon {
-  width: 6px;
-  height: 11px;
-  position: absolute;
-  right: 35px;
-  top: 50%;
-  margin-top: -5px;
-}
-#wrap .Banner .contentUl .contentLi .contentAnode .isShow {
-  position: absolute;
-  right: 0;
-  top: 50%;
-  margin-top: -5px;
-  display: none;
-}
-#wrap .Banner .contentUl .contentLi .rightContent {
-  width: 159px;
-  border-top: 1px solid #ccc;
-  height: 100%;
-  background: #fff;
-  position: absolute;
-  left: 180px;
-  top: 0;
-  display: none;
-}
-#wrap .Banner .contentUl .contentLi .rightContent li {
-  width: 100%;
-  height: 30px;
-  text-align: center;
-  margin-top: 10px;
-}
-#wrap .Banner .contentUl .contentLi .rightContent li a {
-  text-align: center;
-  font-weight: bold;
-  color: #000;
-}
-#wrap .Banner .contentUl .contentLi .rightContent li a:hover {
-  color: #e94840;
-}
-#wrap .Banner .contentUl .contentLi:hover {
-  background: #60646D;
-}
-#wrap .Banner .contentUl .contentLi:hover .isShow {
-  display: block;
-}
-#wrap .Banner .contentUl .contentLi:hover .rightIcon {
-  display: none;
-}
-#wrap .Banner .contentUl .contentLi:hover .rightContent {
-  display: block;
-}
-.Content {
-  width: 100%;
-  background: #fff;
-}
-.Content .ContentWrap {
-  padding-top: 50px;
   width: 1200px;
   margin: 0 auto;
 }
-.Content .ContentWrap .servicebody {
+#wrap .content .contentWrap h2 {
   width: 100%;
-  height: 71px;
-}
-.Content .ContentWrap .servicebody .navigation {
-  width: 100%;
-}
-.Content .ContentWrap .servicebody .navigation h2 {
-  font-size: 28px;
-  text-align: center;
-  font-weight: 800;
-  color: #3d3838;
-  font-family: "Microsoft YaHei";
-}
-.Content .ContentWrap .servicebody .navigation .serviceType {
-  text-align: center;
-  width: 100%;
-  height: 25px;
-  margin-top: 15px;
-  font-family: "幼圆";
-}
-.Content .ContentWrap .servicebody .navigation .serviceType a {
-  color: #3d3838;
-  font-size: 21px;
-  -webkit-transition: color 0.5s;
-  transition: color 0.5s;
-}
-.Content .ContentWrap .servicebody .navigation .serviceType a:hover {
-  color: #e94840;
-}
-.Content .ContentWrap .servicetags {
-  width: 100%;
-  height: 375px;
-}
-.Content .ContentWrap .servicetags .tagsListHeader {
-  width: 100%;
-  height: 20px;
-  position: relative;
-}
-.Content .ContentWrap .servicetags .tagsListHeader .lookMore {
-  font-family: "幼圆";
-  position: absolute;
-  right: 0;
-  top: -26px;
-}
-.Content .ContentWrap .servicetags .tagsListHeader .lookMore a {
+  height: 85px;
+  text-align: left;
+  line-height: 85px;
   font-size: 18px;
-  color: #898989;
-  -webkit-transition: color 0.5s;
-  transition: color 0.5s;
+  font-weight: bold;
 }
-.Content .ContentWrap .servicetags .tagsListHeader .lookMore a:hover {
-  color: #e94840;
-}
-.Content .ContentWrap .servicetags .row {
-  margin-top: 10px;
+#wrap .content .contentWrap .service-center {
   width: 100%;
-  height: 345px;
 }
-.Content .ContentWrap .servicetags .row .rowItems {
-  width: 208px;
-  height: 323px;
-  padding: 10px;
-  margin: 0 5px;
-  border: 1px solid #eaeaea;
-  background: #fff;
+#wrap .content .contentWrap .service-center .ulactivety {
+  overflow: hidden;
+  width: 100%;
+}
+#wrap .content .contentWrap .service-center .ulactivety .ulactivetyLi {
   float: left;
+  width: 232px;
+  height: 300px;
+  border: 1px solid #eaeaea;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0 10px 10px 0;
+  background: #fff;
+  cursor: pointer;
 }
-.Content .ContentWrap .servicetags .row .rowItems a {
-  display: block;
+#wrap .content .contentWrap .service-center .ulactivety .ulactivetyLi img {
   width: 100%;
-  height: 100%;
 }
-.Content .ContentWrap .servicetags .row .rowItems a img {
-  width: 100%;
-}
-.Content .ContentWrap .servicetags .row .rowItems a .serviceName {
-  font-size: 16px;
-  display: block;
-  padding: 5px 0;
-  font-weight: 800;
-  color: #000;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-.Content .ContentWrap .servicetags .row .rowItems a .description {
-  color: #929292;
-  padding: 5px 0;
-  height: 58px;
-  font-size: 13px;
-  line-height: 18px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-.Content .ContentWrap .servicetags .row .rowItems a .price {
+#wrap .content .contentWrap .service-center .ulactivety .ulactivetyLi .shopName {
   width: 100%;
   height: 26px;
-  font-size: 14px;
-  color: #fb474f;
+  margin-top: 15px;
 }
-.Content .ContentWrap .servicetags .row .rowItems a .price .btns {
-  width: 74px;
-  height: 22px;
-  border: 1px solid #fb474f;
-  color: #fff;
+#wrap .content .contentWrap .service-center .ulactivety .ulactivetyLi .shopName img {
+  width: 18px;
+  height: 17px;
+  vertical-align: top;
+}
+#wrap .content .contentWrap .service-center .ulactivety .ulactivetyLi .shopName i {
+  font-size: 16px;
   font-weight: bold;
-  float: right;
-  background: #fb474f;
-  text-align: center;
-  line-height: 22px;
-  border-radius: 4px;
 }
-.Content .ContentWrap .servicetags .row .rowItems:hover {
+#wrap .content .contentWrap .service-center .ulactivety .ulactivetyLi .shopInfo {
+  width: 100%;
+  height: 26px;
+  font-size: 12px;
+  color: #929292;
+  line-height: 26px;
+}
+#wrap .content .contentWrap .service-center .ulactivety .ulactivetyLi .shopInfo i {
+  float: right;
+}
+#wrap .content .contentWrap .service-center .ulactivety .ulactivetyLi:hover {
   -webkit-box-shadow: 0 0 10px #cccccc, 0 0 10px #ccc, 0 10px 10px #ccc, 1px 0px 10px #ccc;
           box-shadow: 0 0 10px #cccccc, 0 0 10px #ccc, 0 10px 10px #ccc, 1px 0px 10px #ccc;
 }
-.Content .ContentWrap .fws {
-  width: 1192px;
-  line-height: 32px;
-  padding: 10px;
+#wrap .content .contentWrap .service-center .getServiceList {
+  width: 970px;
+  height: 152px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+#wrap .content .contentWrap .service-center .getServiceList span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 200px;
+  height: 50px;
+  background: #fff;
   border: 1px solid #e5e5e5;
-  text-align: justify;
-  margin: 20px auto 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  color: #b1b1b1;
+  line-height: 50px;
+  margin: 50px 5px;
+  border-radius: 5px;
+  cursor: pointer;
 }
-.Content .ContentWrap .fws a {
-  font-size: 14px;
-  color: #3d3838;
-  margin: 0 6px;
-  -webkit-transition: color 0.5s;
-  transition: color 0.5s;
+#wrap .content .contentWrap .service-center .getServiceList span .icon-xialajiantou {
+  margin-top: 6px;
+  margin-left: 2px;
+  color: #ccc;
 }
-.Content .ContentWrap .fws a:nth-child(1) {
-  margin-left: 0;
-}
-.Content .ContentWrap .fws a:hover {
-  color: #e94840;
-}
-.Content:nth-child(2n) {
-  background: #FBF8F8;
-}
-.baozhang {
+#wrap .baozhang {
   width: 100%;
   padding-top: 60px;
   background: #fff;
   text-align: center;
 }
-.baozhang h2 {
+#wrap .baozhang h2 {
   font-size: 30px;
   font-family: "微软雅黑";
   font-weight: 800;
   margin: 20px 0 10px 0;
 }
-.baozhang h2 i {
+#wrap .baozhang h2 i {
   color: #fb474f;
   font-weight: 800;
 }
-.baozhang p {
+#wrap .baozhang p {
   font-size: 22px;
   color: #3d3838;
 }
-.servi {
+#wrap .servi {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -646,7 +501,7 @@ i {
   padding-top: 20px;
   background: #fff;
 }
-.servi ul {
+#wrap .servi ul {
   width: 100%;
   height: 100%;
   display: -webkit-box;
@@ -659,47 +514,47 @@ i {
       -ms-flex-pack: center;
           justify-content: center;
 }
-.servi ul li {
+#wrap .servi ul li {
   margin-right: 35px;
 }
-.servi ul li img {
+#wrap .servi ul li img {
   width: 20px;
   height: 20px;
   vertical-align: top;
 }
-.servi ul li span {
+#wrap .servi ul li span {
   font-size: 18px;
   color: #1d1515;
 }
-.HotCity {
+#wrap .HotCity {
   width: 100%;
   height: 120px;
   background: #fff;
   padding-top: 50px;
 }
-.HotCity .cityWrap {
+#wrap .HotCity .cityWrap {
   width: 1200px;
   height: 100%;
   margin: 0 auto;
 }
-.HotCity .cityWrap dl {
+#wrap .HotCity .cityWrap dl {
   width: 100%;
   height: 100%;
 }
-.HotCity .cityWrap dl dt {
+#wrap .HotCity .cityWrap dl dt {
   float: left;
   font-family: "微软雅黑";
   font-size: 18px;
   font-weight: bold;
   line-height: 38px;
 }
-.HotCity .cityWrap dl dd {
+#wrap .HotCity .cityWrap dl dd {
   width: 1090px;
   margin-left: 30px;
   float: left;
   line-height: 30px;
 }
-.HotCity .cityWrap dl dd a {
+#wrap .HotCity .cityWrap dl dd a {
   text-align: center;
   font-size: 16px;
   color: #898989;
@@ -713,43 +568,33 @@ i {
   -webkit-transition: color 0.5s;
   transition: color 0.5s;
 }
-.HotCity .cityWrap dl dd a:hover {
+#wrap .HotCity .cityWrap dl dd a:hover {
   color: #e94840;
 }
-.beian {
-  width: 100%;
-  padding-top: 50px;
-}
-.beian .beianWrap {
-  width: 1200px;
-  margin: 0 auto;
-}
-.beian .beianWrap .beianTitle {
-  font-size: 18px;
-  color: #1d1515;
-  font-weight: bold;
-}
-.beian .beianWrap .hezuo {
-  width: 100%;
-  margin-top: 20px;
-}
-.beian .beianWrap .hezuo li {
-  width: 120px;
-  height: 60px;
-  float: left;
-  margin-right: 10px;
-  margin-bottom: 10px;
-  background: #fff;
-  text-align: center;
-  line-height: 60px;
-}
-.beian .beianWrap .hezuo li img {
-  width: 80%;
-}
-.FooterInfo {
+#wrap .FooterInfo {
   width: 1200px;
   margin: 0 auto;
   text-align: left;
   color: #898989;
   margin-top: 10px;
+}
+#wrap .jiameng {
+  position: absolute;
+  right: 0px;
+  top: 85px;
+  width: 232px;
+}
+#wrap .jiameng .jiamengPic {
+  width: 100%;
+}
+#wrap .jiameng .erweima {
+  width: 232px;
+  height: 290px;
+  margin-top: 10px;
+  background: url("../images/tuijianfuwushang_06.jpg");
+  background-repeat: no-repeat;
+}
+#wrap .jiameng .erweima img {
+  width: 130px;
+  margin: 50px 0 0 50px;
 }

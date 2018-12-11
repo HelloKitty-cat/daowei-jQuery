@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>到位APP - 高品质上门服务直约平台，家政服务，上门按摩，上门维修，搬家，安心到家！</title>
+  <link rel="stylesheet" href="css/serviceProvide.min.css">
+  <link href="https://cdn.bootcss.com/Swiper/4.4.2/css/swiper.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="//at.alicdn.com/t/font_941290_xgci579u76.css">
+  <script src="https://cdn.bootcss.com/jquery/1.12.0/jquery.js"></script>
+  <script src="https://cdn.bootcss.com/Swiper/4.4.2/js/swiper.min.js"></script>
+  <script type="text/javascript" src="./js/template.js"></script>
+  <script type="text/javascript" src="js/serviceProvide.min.js"></script>
+</head>
+<body>
+<div id="wrap">
+  <div class="headerContent">
+    <div class="nav">
+      <div class="navWrap">
+        <div class="navLeft">
+          <img src="./images/citypoint.png" alt="">
+          <span class="cityName">北京</span>
+          <span class="chooseCity">[切换城市]</span>
+        </div>
+        <ul class="navRight">
+          <li>
+            <a href="javascript:;" class="active">首页</a>
+          </li>
+          <li>
+            <a href="javascript:;">关于我们</a>
+          </li>
+          <li>
+            <a href="javascript:;">服务商</a>
+          </li>
+          <li>
+            <a href="javascript:;">商家入驻</a>
+          </li>
+          <li>
+            <a href="javascript:;">商家登录</a>
+          </li>
+          <li>
+            <a href="javascript:;">到位App</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="header">
+      <div class="headerWrap">
+        <h1>
+          <img src="./images/logo.png" alt="">
+        </h1>
+        <div class="search">
+          <input type="text" placeholder="输入关键词搜索商家、服务">
+          <span><i class="iconfont icon-sousuo"></i></span>
+          <button class="btn">搜服务</button>
+        </div>
+        <div class="CodeWrap">
+          <div class="trigon"></div>
+          <img src="./images/daowayApp.png" alt="" class="erweima">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="content">
+    <div class="contentWrap">
+      <h2>服务商</h2>
+      <div class="service-center">
+        <ul class="ulactivety">
+
+        </ul>
+        <div class="jiameng">
+          <img class="jiamengPic" src="./images/tuijianfuwushang_03.jpg" alt="">
+          <div class="erweima">
+            <img src="./images/daowayApp.png" alt="">
+          </div>
+        </div>
+        <div class="getServiceList">
+          <span>查看更多商家<i class="iconfont icon-xialajiantou"></i></span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="baozhang">
+    <h2>到位<i>服务</i>保障</h2>
+    <p>到位平台担保交易安全，交易未成功100%退款</p>
+  </div>
+  <div class="servi">
+    <ul>
+      <li>
+        <img src="./images/anquan.jpg" alt="">
+        <span>优选服务</span>
+      </li>
+      <li>
+        <img src="./images/anquan.jpg" alt="">
+        <span>全程保障</span>
+      </li>
+      <li>
+        <img src="./images/anquan.jpg" alt="">
+        <span>安全无忧</span>
+      </li>
+    </ul>
+  </div>
+  <div class="HotCity">
+    <div class="cityWrap">
+      <dl>
+        <dt>热门城市</dt>
+        <dd>
+          <a href="javascript:;">北京</a>
+          <a href="javascript:;">上海</a>
+          <a href="javascript:;">广州</a>
+          <a href="javascript:;">深圳</a>
+          <a href="javascript:;">成都</a>
+          <a href="javascript:;">天津</a>
+          <a href="javascript:;">南京</a>
+          <a href="javascript:;">杭州</a>
+          <a href="javascript:;">重庆</a>
+          <a href="javascript:;">苏州</a>
+          <a href="javascript:;">武汉</a>
+          <a href="javascript:;">长沙</a>
+          <a href="javascript:;">济南</a>
+          <a href="javascript:;">郑州</a>
+          <a href="javascript:;">西安</a>
+          <a href="javascript:;">沈阳</a>
+          <a href="javascript:;">福州</a>
+          <a href="javascript:;">厦门</a>
+          <a href="javascript:;">南昌</a>
+          <a href="javascript:;">合肥</a>
+          <a href="javascript:;">宁波</a>
+          <a href="javascript:;">无锡</a>
+          <a href="javascript:;">青岛</a>
+          <a href="javascript:;">大连</a>
+          <a href="javascript:;">东莞</a>
+          <a href="javascript:;">佛山</a>
+          <a href="javascript:;">石家庄</a>
+          <a href="javascript:;">哈尔滨</a>
+          <a href="javascript:;">太原</a>
+          <a href="javascript:;">昆明</a>
+          <a href="javascript:;">贵阳</a>
+          <a href="javascript:;">南宁</a>
+          <a href="javascript:;">温州</a>
+        </dd>
+      </dl>
+    </div>
+  </div>
+  <div class="FooterInfo">©2015 版权所有 到位 daoway.com 京ICP备15001471号-1 北京邻家科技有限公司</div>
+</div>
+<script type="text/html" id="service">
+
+  {{each data as value i}}
+  <a href="serviceComments.html" target="_blank">
+  <li class="ulactivetyLi">
+    <img src={{value.imgUrl}} alt="">
+    <p class="shopName">
+      <img src="./images/home1.png" class="home1" alt="">
+      <i>{{value.title}}</i>
+    </p>
+    <p class="shopInfo">已接单{{value.orderCount}}单
+      <i>好评{{value.positiveRate}}</i>
+    </p>
+  </li>
+  </a>
+  {{/each}}
+</script>
+</body>
+</html>

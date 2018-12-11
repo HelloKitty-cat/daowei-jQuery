@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/serviceComments.min.css">
+  <link href="https://cdn.bootcss.com/Swiper/4.4.2/css/swiper.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="//at.alicdn.com/t/font_941290_xgci579u76.css">
+  <script src="https://cdn.bootcss.com/jquery/1.12.0/jquery.js"></script>
+  <script src="https://cdn.bootcss.com/Swiper/4.4.2/js/swiper.min.js"></script>
+  <script type="text/javascript" src="./js/template.js"></script>
+  <script type="text/javascript" src="js/serviceComments.min.js"></script>
+  <title>到位APP - 高品质上门服务直约平台，家政服务，上门按摩，上门维修，搬家，安心到家！</title>
+</head>
+<body>
+  <div id="wrap">
+    <div class="headerContent">
+      <div class="nav">
+        <div class="navWrap">
+          <div class="navLeft">
+            <img src="./images/citypoint.png" alt="">
+            <span class="cityName">北京</span>
+            <span class="chooseCity">[切换城市]</span>
+          </div>
+          <ul class="navRight">
+            <li>
+              <a href="javascript:;" class="active">首页</a>
+            </li>
+            <li>
+              <a href="javascript:;">关于我们</a>
+            </li>
+            <li>
+              <a href="./serviceProvide.html">服务商</a>
+            </li>
+            <li>
+              <a href="javascript:;">商家入驻</a>
+            </li>
+            <li>
+              <a href="javascript:;">商家登录</a>
+            </li>
+            <li>
+              <a href="javascript:;">到位App</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="header">
+        <div class="headerWrap">
+          <h1>
+            <img src="./images/logo.png" alt="">
+          </h1>
+          <div class="search">
+            <input type="text" placeholder="输入关键词搜索商家、服务">
+            <span><i class="iconfont icon-sousuo"></i></span>
+            <button class="btn">搜服务</button>
+          </div>
+          <div class="CodeWrap">
+            <div class="trigon"></div>
+            <img src="./images/daowayApp.png" alt="" class="erweima">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="htit">
+
+    </div>
+    <div class="navtit">
+      <ul>
+        <li class="currentActive">
+          <a href="javascript:;">服务项目</a>
+        </li>
+        <li>
+          <a href="javascript:;">商家简介</a>
+        </li>
+        <li>
+          <a href="javascript:;">用户评论</a>
+        </li>
+      </ul>
+    </div>
+    <div class="centerleft">
+      <h3 style="width: 100%; border: none; border-bottom: 1px solid #e5e5e5;">
+        <span class="paihang">
+          <i style="color: #121212; margin: 0" class="activity">服务项目</i>
+        </span>
+      </h3>
+      <div class="boxtab">
+
+      </div>
+    </div>
+    <div class="getServiceList">
+      <span>查看更多商家<i class="iconfont icon-xialajiantou"></i></span>
+    </div>
+    <div class="ShopInfoWrap">
+      <h3 style="width: 100%; border: none; border-bottom: 1px solid #e5e5e5;">
+        <span class="paihang">
+          <i style="color: #121212; margin: 0" class="activity">商家信息</i>
+        </span>
+      </h3>
+      <div class="company">
+        <span>北京宜生健康科技有限公司</span>
+        <img src="./images/renzheng.jpg" alt="">
+      </div>
+      <p class="profile">
+        宜生到家”是国内领先的互联网+大健康O2O创新企业，以“中医外治法联合调理，个性化管理服务”做为切入点，通过富侨30年积累的品牌影响力及技师团队，宜生到家快速进行渠道资源整合及产品架构完善，不到半年时间将技师团队从不足百人扩充到600余人，研发出中医推拿、足疗spa、小儿推拿三大系列三十余种产品，成为领域内推拿师人数最多、服务品类最多的平台，塑造了上门推拿行业内最高服务标准。
+      </p>
+    </div>
+    <div class="commentWrap">
+      <h3 style="width: 100%; border: none; border-bottom: 1px solid #e5e5e5;">
+        <span class="paihang">
+          <i style="color: #121212; margin: 0" class="activity">用户评论</i>
+          <em style="color: #121212; margin-left: 10px">(5647条评论)</em>
+        </span>
+      </h3>
+      <div class="commentDiv">
+
+      </div>
+    </div>
+  </div>
+
+
+  <script type="text/html" id="shopInfo">
+    {{each data as value i}}
+    <div class="htit-center">
+      <div class="htit-left">
+        <strong>{{value.name}}</strong>
+        <span class="workTime">营业时间：<i>{{value.seredate}}</i></span>
+        <span class="OrderTime">最近可预约时间：<i>{{value.servedatalately}}</i></span>
+      </div>
+      <div class="htit-right">
+        <ul>
+          <li>
+            <i>{{value.orderCount}}</i>
+            成功接单
+            <em>|</em>
+          </li>
+          <li>
+            <i>{{value.accept}}</i>
+            接单率
+            <em>|</em>
+          </li>
+          <li>
+            <i>{{value.praise}}</i>
+            好评率
+          </li>
+        </ul>
+      </div>
+    </div>
+    {{/each}}
+  </script>
+  <script type="text/html" id="shopItems">
+    {{each data as value i}}
+    <a href="javascript:;">
+      <div class="ctop">
+        <img src={{value.imgUrl}} alt="">
+        <span class="spm">
+              <i class="message">{{value.message}}</i>
+              <i class="time">{{value.info}}</i>
+              <i class="price">
+                <b>{{value.price}}</b>
+                <em>元/次</em>
+              </i>
+            </span>
+        <span class="spf">
+              已售 <i>{{value.saleCount}}</i>
+            </span>
+      </div>
+    </a>
+    {{/each}}
+  </script>
+  <script type="text/html" id="comments">
+    {{each data as value i}}
+    <div class="comments">
+      <img class="avatar" src={{value.iconUrl}} alt="">
+      <ul>
+        <li>{{value.nick}}</li>
+        <li>
+          <div class="star">
+              <span class="noColor">
+                  <img src="./images/red_star.png" alt="">
+                  <img src="./images/red_star.png" alt="">
+                  <img src="./images/red_star.png" alt="">
+                  <img src="./images/red_star.png" alt="">
+                  <img src="./images/red_star.png" alt="">
+              </span>
+          </div>
+          <i>2018-12-11</i>
+        </li>
+        <li class="commentdetail">{{value.comment}}</li>
+        <li class="commentposition">
+          <img src="./images/position.jpg" alt="">
+          北京  朝阳区
+        </li>
+      </ul>
+    </div>
+    {{/each}}
+  </script>
+</body>
+</html>
