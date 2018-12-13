@@ -3,7 +3,6 @@
 #wrap {
   width: 100%;
   min-width: 1200px;
-  height: 10000px;
   background: #f8f8f8;
   .headerContent {
     width: 100%;
@@ -455,8 +454,8 @@
           margin-left: 20px;
           height: 137px;
           li{
-            width: 100%;
-            height: 28px;
+            width: auto;
+            height: auto;
             &:nth-child(1){
               font-size: 15px;
               line-height: 28px;
@@ -485,7 +484,7 @@
               line-height: 28px;
             }
             &:nth-child(4){
-              height: 40px;
+              height: 20px;
               color: #898989;
               line-height: 40px;
               img{
@@ -498,6 +497,173 @@
         }
       }
     }
+    .fenye2{
+      width: 100%;
+      height: 152px;
+      text-align: center;
+      .pageup,.pageDown{
+        display: inline-block;
+        width: 80px;
+        height: 30px;
+        line-height: 30px;
+        font-size: 14px;
+        color: #121212;
+        margin: 50px 5px;
+        border: 1px solid #e5e5e5;
+      }
+      .showPage{
+        display: inline-block;
+        vertical-align: middle;
+        .num{
+          display: inline-block;
+          vertical-align: middle;
+          width: 32px;
+          height: 30px;
+          line-height: 30px;
+          font-size: 14px;
+          border: 1px solid #e5e5e5;
+          color: #121212;
+          transition: color .8s;
+          &.active{
+            background: #e94840;
+            color: #fff;
+          }
+          &:hover{
+            background: #e94840;
+            color: #fff;
+          }
+        }
+      }
+    }
   }
-
+  .baozhang{
+    margin-top: 50px;
+    width: 100%;
+    padding-top: 60px;
+    text-align: center;
+    h2{
+      font-size: 30px;
+      font-family: "微软雅黑";
+      font-weight: 800;
+      margin: 20px 0 10px 0;
+      i{
+        color: #fb474f;
+        font-weight: 800;
+      }
+    }
+    p{
+      font-size: 22px;
+      color: #3d3838;
+    }
+  }
+  .servi{
+    width: 100%;
+    display: flex;
+    height: 46px;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 20px;
+    background: #fff;
+    ul{
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      li{
+        margin-right: 35px;
+        img{
+          width: 20px;
+          height: 20px;
+          vertical-align: top;
+        }
+        span{
+          font-size: 18px;
+          color: #1d1515;
+        }
+      }
+    }
+  }
+  .HotCity{
+    width: 100%;
+    height: 120px;
+    background: #fff;
+    padding-top: 50px;
+    .cityWrap{
+      width: 1200px;
+      height: 100%;
+      margin: 0 auto;
+      dl{
+        width: 100%;
+        height: 100%;
+        dt{
+          float: left;
+          font-family: "微软雅黑";
+          font-size: 18px;
+          font-weight: bold;
+          line-height: 38px;
+        }
+        dd{
+          width: 1090px;
+          margin-left: 30px;
+          float: left;
+          line-height: 30px;
+          a{
+            text-align: center;
+            font-size: 16px;
+            color: #898989;
+            display: inline-block;
+            font-weight: 200;
+            cursor: pointer;
+            font-family: "微软雅黑";
+            width: 8.5%;
+            line-height: 40px;
+            height: 30px;
+            transition: color .5s;
+            &:hover{
+              color: #e94840;
+            }
+          }
+        }
+      }
+    }
+  }
+  .FooterInfo{
+    width: 1200px;
+    margin: 0 auto;
+    text-align: left;
+    color: #898989;
+    margin-top: 10px;
+  }
+  .centerright{
+    width: 230px;
+    height: 590px;
+    position: absolute;
+    top: 342px;
+    right: 120px;
+    .top{
+      width: 100%;
+      height: 290px;
+      background: url("../images/fuwushang2_07.jpg");
+      background-repeat: no-repeat;
+      img{
+        width: 115px;
+        height: 115px;
+        margin-top: 60px;
+        margin-left: 60px;
+      }
+    }
+    .bottom{
+      width: 100%;
+      height: 290px;
+      margin-top: 10px;
+      background: url("../images/tuijianfuwushang_06.jpg");
+      background-repeat: no-repeat;
+      img{
+        width: 130px;
+        height: 130px;
+        margin: 50px 0 0 50px;
+      }
+    }
+  }
 }

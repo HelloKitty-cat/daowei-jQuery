@@ -22,4 +22,7 @@ $(function () {
       }
     }
   });
+
+  $('.navRight li a').removeClass('active');
+  $('.navRight li:nth-child(3) a').addClass('active');
 });

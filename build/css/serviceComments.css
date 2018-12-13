@@ -190,7 +190,6 @@ i {
 #wrap {
   width: 100%;
   min-width: 1200px;
-  height: 10000px;
   background: #f8f8f8;
 }
 #wrap .headerContent {
@@ -664,8 +663,8 @@ i {
   height: 137px;
 }
 #wrap .commentWrap .commentDiv .comments ul li {
-  width: 100%;
-  height: 28px;
+  width: auto;
+  height: auto;
 }
 #wrap .commentWrap .commentDiv .comments ul li:nth-child(1) {
   font-size: 15px;
@@ -693,7 +692,7 @@ i {
   line-height: 28px;
 }
 #wrap .commentWrap .commentDiv .comments ul li:nth-child(4) {
-  height: 40px;
+  height: 20px;
   color: #898989;
   line-height: 40px;
 }
@@ -701,4 +700,188 @@ i {
   width: 9px;
   height: 11px;
   margin-right: 10px;
+}
+#wrap .commentWrap .fenye2 {
+  width: 100%;
+  height: 152px;
+  text-align: center;
+}
+#wrap .commentWrap .fenye2 .pageup,
+#wrap .commentWrap .fenye2 .pageDown {
+  display: inline-block;
+  width: 80px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 14px;
+  color: #121212;
+  margin: 50px 5px;
+  border: 1px solid #e5e5e5;
+}
+#wrap .commentWrap .fenye2 .showPage {
+  display: inline-block;
+  vertical-align: middle;
+}
+#wrap .commentWrap .fenye2 .showPage .num {
+  display: inline-block;
+  vertical-align: middle;
+  width: 32px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 14px;
+  border: 1px solid #e5e5e5;
+  color: #121212;
+  -webkit-transition: color 0.8s;
+  transition: color 0.8s;
+}
+#wrap .commentWrap .fenye2 .showPage .num.active {
+  background: #e94840;
+  color: #fff;
+}
+#wrap .commentWrap .fenye2 .showPage .num:hover {
+  background: #e94840;
+  color: #fff;
+}
+#wrap .baozhang {
+  margin-top: 50px;
+  width: 100%;
+  padding-top: 60px;
+  text-align: center;
+}
+#wrap .baozhang h2 {
+  font-size: 30px;
+  font-family: "微软雅黑";
+  font-weight: 800;
+  margin: 20px 0 10px 0;
+}
+#wrap .baozhang h2 i {
+  color: #fb474f;
+  font-weight: 800;
+}
+#wrap .baozhang p {
+  font-size: 22px;
+  color: #3d3838;
+}
+#wrap .servi {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 46px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 20px;
+  background: #fff;
+}
+#wrap .servi ul {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+#wrap .servi ul li {
+  margin-right: 35px;
+}
+#wrap .servi ul li img {
+  width: 20px;
+  height: 20px;
+  vertical-align: top;
+}
+#wrap .servi ul li span {
+  font-size: 18px;
+  color: #1d1515;
+}
+#wrap .HotCity {
+  width: 100%;
+  height: 120px;
+  background: #fff;
+  padding-top: 50px;
+}
+#wrap .HotCity .cityWrap {
+  width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+}
+#wrap .HotCity .cityWrap dl {
+  width: 100%;
+  height: 100%;
+}
+#wrap .HotCity .cityWrap dl dt {
+  float: left;
+  font-family: "微软雅黑";
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 38px;
+}
+#wrap .HotCity .cityWrap dl dd {
+  width: 1090px;
+  margin-left: 30px;
+  float: left;
+  line-height: 30px;
+}
+#wrap .HotCity .cityWrap dl dd a {
+  text-align: center;
+  font-size: 16px;
+  color: #898989;
+  display: inline-block;
+  font-weight: 200;
+  cursor: pointer;
+  font-family: "微软雅黑";
+  width: 8.5%;
+  line-height: 40px;
+  height: 30px;
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
+}
+#wrap .HotCity .cityWrap dl dd a:hover {
+  color: #e94840;
+}
+#wrap .FooterInfo {
+  width: 1200px;
+  margin: 0 auto;
+  text-align: left;
+  color: #898989;
+  margin-top: 10px;
+}
+#wrap .centerright {
+  width: 230px;
+  height: 590px;
+  position: absolute;
+  top: 342px;
+  right: 120px;
+}
+#wrap .centerright .top {
+  width: 100%;
+  height: 290px;
+  background: url("../images/fuwushang2_07.jpg");
+  background-repeat: no-repeat;
+}
+#wrap .centerright .top img {
+  width: 115px;
+  height: 115px;
+  margin-top: 60px;
+  margin-left: 60px;
+}
+#wrap .centerright .bottom {
+  width: 100%;
+  height: 290px;
+  margin-top: 10px;
+  background: url("../images/tuijianfuwushang_06.jpg");
+  background-repeat: no-repeat;
+}
+#wrap .centerright .bottom img {
+  width: 130px;
+  height: 130px;
+  margin: 50px 0 0 50px;
 }
